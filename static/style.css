@@ -1,0 +1,134 @@
+/* General Styling */
+body {
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centered Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: -10px;
+    left: 80px;
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    transform:scaleX(1.2)
+}
+
+/* Search Bar */
+.search-container {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-container button {
+    background-color: orange;
+    border: none;
+    padding: 12px 20px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+/* Get My Location Button */
+.location-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Weather Info Section */
+.weather-info {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    font-size: 43px;
+    margin-top: 30px;
+}
+
+/* Weather Details Grid */
+.weather-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Weather Data Cards */
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 260px;
+    height: 130px;
+    border-radius: 8px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .weather-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .search-container {
+        top: 10px;
+        right: 10px;
+    }
+
+    .search-container input {
+        width: 180px;
+    }
+
+    .search-container button {
+        width: 100px;
+        height: 40px;
+        padding: 8px;
+    }
+    
+    .card {
+        width: 220px;
+    }
+}

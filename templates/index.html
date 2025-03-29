@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWire</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ google_api_key }}&libraries=places"></script>
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">SkyWire</h1>
+
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter city">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <button id="getLocationBtn" class="location-btn">Get My Location</button>
+
+        <div class="weather-info">
+            <div class="weather-row">
+                <div class="card">
+                    <h3>Temperature</h3>
+                    <p id="temperature">--°C</p>
+                </div>
+                <div class="card">
+                    <h3>Feels Like</h3>
+                    <p id="feelsLike">--°C</p>
+                </div>
+            </div>
+
+            <div class="weather-row">
+                <div class="card">
+                    <h3>Humidity</h3>
+                    <p id="humidity">--%</p>
+                </div>
+                <div class="card">
+                    <h3>Wind Speed</h3>
+                    <p id="windSpeed">-- km/h</p>
+                </div>
+                <div class="card">
+                    <h3>Condition</h3>
+                    <p id="condition">--</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
